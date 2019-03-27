@@ -12,7 +12,12 @@ main{
 }
 
 a{
-    color: grey;
+    color: #ffbd2e;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffbd2e;
     text-decoration: none;
 }
 
