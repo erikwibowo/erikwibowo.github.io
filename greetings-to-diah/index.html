@@ -33,7 +33,7 @@
 							<img src="file/diah.png" width="200px">
 							<h3 class="display-4" id="greeting">Selamat Siang Diah</h3>
 							<hr class="my-4">
-							<h1>Happy working 😊, Semangat puasanya 🍉</h1>
+							<h1 id="text">Greeting is now loading...</h1>
 						</center>
 					</div>
 				</div>
@@ -45,16 +45,5 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript">
-		var greeting;
-		var time = new Date().getHours();
-		if (time < 10) {
-			greeting = "Selamat Pagi";
-		} else if (time < 20) {
-			greeting = "Selamat Siang";
-		} else {
-			greeting = "Selamat Malam";
-		}
-		document.getElementById("greeting").innerHTML = greeting+" Mbak Diah";
-	</script>
+	<script type="text/javascript" src="src/js.js"></script>
 </html>
