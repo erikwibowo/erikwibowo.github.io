@@ -135,3 +135,7 @@ blockquote {
     border: solid 2px #ffbd2e;
     border-radius: 100%;
 }
+
+.kotak{
+	float: left;
+}
