@@ -47,4 +47,11 @@ var greetings = [
 	'greeting 30',
 	'greeting 31'
 ];
+
+var foto = [
+	'diah.png',
+	'diah2.png',
+	'diah3.png'
+]
 document.getElementById("text").innerHTML = greetings[n-1];
+document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 3)]);
