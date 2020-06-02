@@ -17,7 +17,7 @@ var n = d.getDay();
 var greetings = [
 	'greeting 1',
 	'Happy working 😊, Semangat puasanya 🍉',
-	'I 💗 you , Semangat kerjanya 🍉',
+	'I ❤️ you , Semangat kerjanya 🍉',
 	'Istirahat yang cukup 😊, Semangat puasanya 🍉',
 	'Wherever you are, I always make you smile 😄',
 	'Jangan mandi sampe lewat maghrib.',
