@@ -50,9 +50,9 @@ var greetings = [
 var foto = [
 	'diah.png',
 	'diah2.png',
-	'diah3.png'
+	'diah3.png',
 	'diah4.png',
-	'diah5.png'
+	'diah5.png',
 	'diah6.png'
 ]
 document.getElementById("text").innerHTML = greetings[n-1];
