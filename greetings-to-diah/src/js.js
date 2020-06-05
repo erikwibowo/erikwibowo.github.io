@@ -56,6 +56,13 @@ var foto = [
 ]
 document.getElementById("text").innerHTML = greetings[n-1];
 document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 5)]);
+var pos = 0;
 window.setInterval(function(){
-	document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 5)]);
+	pos == foto.length-1 ? pos = 0:pos;
+	photo(pos);
+	pos++
 }, 1000);
+
+function photo(pos){
+	document.getElementById("foto").setAttribute("src", "file/"+foto[pos]);
+}
