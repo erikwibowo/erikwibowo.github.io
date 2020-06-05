@@ -52,8 +52,9 @@ var foto = [
 	'diah2.png',
 	'diah3.png',
 	'diah4.png',
-	'diah5.png',
-	'diah6.png'
+	'diah5.png'
 ]
 document.getElementById("text").innerHTML = greetings[n-1];
-document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 6)]);
+window.setInterval(function(){
+	document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 5)]);
+}, 1000);
