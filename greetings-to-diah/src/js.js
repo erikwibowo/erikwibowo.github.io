@@ -55,6 +55,7 @@ var foto = [
 	'diah5.png'
 ]
 document.getElementById("text").innerHTML = greetings[n-1];
+document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 5)]);
 window.setInterval(function(){
 	document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 5)]);
 }, 1000);
