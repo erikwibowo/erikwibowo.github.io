@@ -69,3 +69,5 @@ window.setInterval(function(){
 function photo(pos){
 	document.getElementById("foto").setAttribute("src", "file/"+foto[pos]);
 }
+
+document.getElementById('myAudio').play();
