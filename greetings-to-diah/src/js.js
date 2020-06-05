@@ -48,11 +48,14 @@ var greetings = [
 ];
 
 var foto = [
-	'diah.png',
-	'diah2.png',
+	'diah5.png',
+	'diah1.png',
+	'diah8.png',
 	'diah3.png',
+	'diah7.png',
 	'diah4.png',
-	'diah5.png'
+	'diah6.png',
+	'diah2.png'
 ]
 document.getElementById("text").innerHTML = greetings[n-1];
 document.getElementById("foto").setAttribute("src", "file/"+foto[Math.floor(Math.random() * 5)]);
