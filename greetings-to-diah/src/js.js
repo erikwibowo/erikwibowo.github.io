@@ -13,7 +13,7 @@ if (time > 00 && time <= 10) {
 document.getElementById("greeting").innerHTML = greeting+" Mbak Diah";
 
 var d = new Date(timezone);
-var n = d.getDay();
+var n = d.getDate();
 var greetings = [
 	'greeting 1',
 	'Happy working 😊, Semangat puasanya 🍉',
@@ -22,7 +22,7 @@ var greetings = [
 	'Kalo mau ngiler usahakan tidak ada yang melihat',
 	'Jangan begadang, kalau tiada artinya',
 	'Istirahat yang cukup, Semangat puasanya',
-	"Alhamdulillah hari terakhir puasa syawal. Semangat",
+	'Alhamdulillah hari terakhir puasa syawal. Semangat',
 	'Ubah insecure menjadi bersyukur',
 	'Hati-hati berangkat kerjanya',
 	'Stay safe pake masker',
@@ -70,4 +70,4 @@ function photo(pos){
 	document.getElementById("foto").setAttribute("src", "file/"+foto[pos]);
 }
 
-document.getElementById('myAudio').play();
+// document.getElementById('myAudio').play();
