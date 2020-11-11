@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagu untuk Susi Imroatul Rizqiati</title>
+    <meta property="og:title" content="Susi">
+    <meta property="og:description" content="Lagu untuk Susi Imroatul Rizqiati">
+    <meta property="og:image" content="https://erikwibowo.github.io/sayang-susi/file/susi.png">
+    <meta property="og:url" content="https://erikwibowo.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Susi">
+    <meta name="twitter:image:alt" content="Foto Susi">
+    <meta name="twitter:site" content="@erikwibo">
+    <link rel="shortcut icon" href="file/favicon.png" type="image/png">
+    <link rel="icon" href="file/favicon.png" type="image/png">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
+    <link rel="stylesheet" type="text/css" href="src/css.css">
+    <script type="text/javascript" src="src/snowstorm-min.js"></script>
+    <script>
+    window.console = window.console || function(t) {};
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+    }
+    </script>
+  </head>
+  <body translate="no">
+    <div id="player">
+      <div class="album">
+        <img id="foto" src="file/susi.png" width="100%"><br>
+      </div>
+      <div class="info">
+        <div class="controls">
+          <div class="play"><i class="fas fa-play"></i></div>
+          <div class="pause"><i class="fas fa-pause"></i></div>
+        </div>
+        <div class="currently-playing">
+          <h2 class="song-name" id="text">Bentuk cinta itu...</h2>
+          <h3 class="artist-name">Made with ❤ by Erik</h3>
+        </div>
+      </div>
+    </div>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!-- <script type="text/javascript" src="src/js2.js"></script> -->
+    <script id="rendered-js">
+      //like & shuffle button
+      $('.heart').click(function () {
+        $(this).toggleClass('clicked');
+      });
+
+      $('.shuffle').click(function () {
+        $(this).toggleClass('clicked');
+      });
+
+      //show info box on hover
+      $('#player').hover(function () {
+        $('.info').toggleClass('up');
+      });
+
+      //music player settings
+
+      let audio = new Audio('file/bentuk-cinta.mp3');
+
+      $('.pause').hide(); //hide pause button until clicked
+
+      //play button
+      $('.play').click(function () {
+        audio.play();
+        $('.play').hide();
+        $('.pause').show();
+      });
+
+      //pause button
+      $('.pause').click(function () {
+        audio.pause();
+        $('.play').show();
+        $('.pause').hide();
+      });
+      //# sourceURL=pen.js
+    </script>
+  </body>
+</html>
