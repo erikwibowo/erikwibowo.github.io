@@ -1,6 +1,6 @@
 body{
     padding: 5%;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     color: white;
     background: #9B9B9B;
 }
@@ -62,7 +62,7 @@ td{
 
 .is-avatar{
     border-radius: 50%;
-    border: solid 2px white;
+    border: solid 1px white;
 }
 
 h3{
